@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch E3",
+            "request": "launch",
+            "mainClass": "E3",
+            "projectName": "D2_OOP_8b6b9781"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "D2_OOP_8b6b9781"
+        },
+        {
+            "type": "java",
             "name": "Launch SomeProgram",
             "request": "launch",
             "mainClass": "E1.SomeProgram",
