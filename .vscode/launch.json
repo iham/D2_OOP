@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch SomeProgram",
+            "request": "launch",
+            "mainClass": "E1.SomeProgram",
+            "projectName": "D2_OOP_8b6b9781"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "args": [
+                "u",
+                ""
+            ],
+            "projectName": "D2_OOP_8b6b9781"
+        }
+    ]
+}
