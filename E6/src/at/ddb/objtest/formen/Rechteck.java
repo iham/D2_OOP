@@ -12,9 +12,9 @@ public class Rechteck {
         this.breite = breite;
     }
 
+
     public void setLaenge(int laenge) {
-        if(laenge > 0)
-            this.laenge = laenge;
+        this.laenge = Math.abs(laenge);
     }
 
     public int getLaenge() {
@@ -22,8 +22,7 @@ public class Rechteck {
     }
 
     public void setBreite(int breite) {
-        if(breite > 0)
-            this.breite = breite;
+        this.breite = Math.abs(breite);
     }
 
     public int getBreite() {
