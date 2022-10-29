@@ -2,7 +2,9 @@ package at.ddb.objtest.formen;
 
 import java.awt.Color;
 
-public class Form2D {
+import at.ddb.objtest.IDrawable;
+
+public abstract class Form2D implements IDrawable {
     private int x;
     private int y;
     private Color color = Color.BLUE;
@@ -37,9 +39,10 @@ public class Form2D {
         this.color = color;
     }
 
+    public abstract String zeichneSymbol();
+
     @Override
     public String toString() {
         return "2D Form | x: " + x + " y: " + y + " color: " + color;
     }
-
 }

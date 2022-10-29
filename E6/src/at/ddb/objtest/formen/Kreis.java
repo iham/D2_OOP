@@ -28,7 +28,7 @@ public class Kreis extends Form2D {
 
     @Override
     public String toString() {
-        return "[" + super.toString() + "] || Radius: "+ radius + " Fläche: " + berechneFlaeche() + " Umfang: " + berechneUmfang();
+        return "[" + super.toString() + "] || Kreis " + this.zeichneSymbol() + " Radius: "+ radius + " Fläche: " + berechneFlaeche() + " Umfang: " + berechneUmfang();
     }
 
     @Override
@@ -37,6 +37,13 @@ public class Kreis extends Form2D {
         int result = 1;
         result = prime * result + radius;
         return result;
+    }
+
+    @Override
+    public void draw() {
+        System.out.println(" **");
+        System.out.println("*  *");
+        System.out.println(" ** ");
     }
 
     @Override
@@ -51,6 +58,11 @@ public class Kreis extends Form2D {
         if (radius != other.radius)
             return false;
         return true;
+    }
+
+    @Override
+    public String zeichneSymbol() {
+        return "○";
     }
 
 }

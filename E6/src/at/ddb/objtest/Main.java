@@ -1,16 +1,20 @@
 package at.ddb.objtest;
 
+import java.awt.Color;
+
 import at.ddb.objtest.formen.Form2D;
 import at.ddb.objtest.formen.Kreis;
 import at.ddb.objtest.formen.Rechteck;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        Form2D form = new Form2D();
+        Form2D form = new Kreis();
         System.out.println(form);
+
         Rechteck rA = new Rechteck();
         // rA.laenge = 0;
         rA.setBreite(15);
+        rA.setColor(Color.PINK);
         System.out.println(rA);
 
         Rechteck rB = new Rechteck(15, 7);
@@ -28,5 +32,8 @@ public class Main {
         System.out.println(k2);
 
         System.out.println("Gleichheit: " + k1.equals(k2));
+
+        k2.draw();
+        rB.draw();
     }
 }

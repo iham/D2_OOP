@@ -12,7 +12,6 @@ public class Rechteck extends Form2D {
         this.setBreite(breite);
     }
 
-
     public void setLaenge(int laenge) {
         if(laenge < 0)
             laenge *= -1;
@@ -42,7 +41,7 @@ public class Rechteck extends Form2D {
 
     @Override
     public String toString() {
-        return "[" + super.toString() + "] || Länge: "+ laenge + " Breite: " + breite + " Fläche: " + berechneFlaeche() + " Umfang: " + berechneUmfang();
+        return "[" + super.toString() + "] || Rechteck " + this.zeichneSymbol() + " Länge: " + laenge + " Breite: " + breite + " Fläche: " + berechneFlaeche() + " Umfang: " + berechneUmfang();
     }
 
     @Override
@@ -68,6 +67,18 @@ public class Rechteck extends Form2D {
         if (breite != other.breite)
             return false;
         return true;
+    }
+
+    @Override
+    public String zeichneSymbol() {
+        return "▭";
+    }
+
+    @Override
+    public void draw() {
+        System.out.println("****");
+        System.out.println("*  *");
+        System.out.println("****");
     }
 
 }
