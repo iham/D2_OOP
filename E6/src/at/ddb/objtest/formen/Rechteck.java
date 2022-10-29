@@ -1,8 +1,8 @@
 package at.ddb.objtest.formen;
 
 public class Rechteck {
-    public int laenge;
-    public int breite;
+    private int laenge;
+    private int breite;
 
     public Rechteck() {
     }
@@ -12,6 +12,24 @@ public class Rechteck {
         this.breite = breite;
     }
 
+    public void setLaenge(int laenge) {
+        if(laenge > 0)
+            this.laenge = laenge;
+    }
+
+    public int getLaenge() {
+        return this.laenge;
+    }
+
+    public void setBreite(int breite) {
+        if(breite > 0)
+            this.breite = breite;
+    }
+
+    public int getBreite() {
+        return this.breite;
+    }
+
     public double berechneFlaeche() {
         return laenge * breite;
     }
@@ -19,4 +37,8 @@ public class Rechteck {
         return 2 * (laenge + breite);
     }
 
+    @Override
+    public String toString() {
+        return "[" + super.toString() + "] || Länge: "+ laenge + " Breite: " + breite + " Fläche: " + berechneFlaeche() + " Umfang: " + berechneUmfang();
+    }
 }
