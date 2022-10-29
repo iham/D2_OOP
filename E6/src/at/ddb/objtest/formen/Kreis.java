@@ -1,6 +1,6 @@
 package at.ddb.objtest.formen;
 
-public class Kreis {
+public class Kreis extends Form2D {
     private int radius;
 
     public Kreis() {}

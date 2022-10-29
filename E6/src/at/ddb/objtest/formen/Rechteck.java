@@ -1,6 +1,6 @@
 package at.ddb.objtest.formen;
 
-public class Rechteck {
+public class Rechteck extends Form2D {
     private int laenge;
     private int breite;
 
