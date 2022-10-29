@@ -31,4 +31,26 @@ public class Kreis {
         return "[" + super.toString() + "] || Radius: "+ radius + " Fläche: " + berechneFlaeche() + " Umfang: " + berechneUmfang();
     }
 
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + radius;
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Kreis other = (Kreis) obj;
+        if (radius != other.radius)
+            return false;
+        return true;
+    }
+
 }

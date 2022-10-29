@@ -44,4 +44,30 @@ public class Rechteck {
     public String toString() {
         return "[" + super.toString() + "] || Länge: "+ laenge + " Breite: " + breite + " Fläche: " + berechneFlaeche() + " Umfang: " + berechneUmfang();
     }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + laenge;
+        result = prime * result + breite;
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Rechteck other = (Rechteck) obj;
+        if (laenge != other.laenge)
+            return false;
+        if (breite != other.breite)
+            return false;
+        return true;
+    }
+
 }
