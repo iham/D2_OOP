@@ -4,8 +4,19 @@ public class Rechteck {
     public int laenge;
     public int breite;
 
+    public Rechteck() {
+    }
+
+    public Rechteck(int laenge, int breite) {
+        this.laenge = laenge;
+        this.breite = breite;
+    }
+
+    public double berechneFlaeche() {
+        return laenge * breite;
+    }
     public double berechneUmfang() {
-        return 2 * ( this.laenge + this.breite );
+        return 2 * (laenge + breite);
     }
 
 }
