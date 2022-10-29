@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "at.ddb.objtest.Main",
+            "projectName": "D2_OOP_8b6b9781"
+        },
+        {
+            "type": "java",
             "name": "Launch E3",
             "request": "launch",
             "mainClass": "E3",
