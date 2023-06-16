@@ -2,9 +2,9 @@ package at.ddb.objtest.formen;
 
 import java.awt.Color;
 
-import at.ddb.objtest.IDrawable;
+import at.ddb.objtest.Drawable;
 
-public abstract class Form2D implements IDrawable {
+public abstract class Form2D implements Drawable {
     private int x;
     private int y;
     private Color color = Color.BLUE;

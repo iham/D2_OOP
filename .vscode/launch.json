@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch DatenTester",
+            "request": "launch",
+            "mainClass": "at.ddb.DatenTester",
+            "projectName": "daten"
+        },
+        {
+            "type": "java",
+            "name": "Launch DatenTester",
+            "request": "launch",
+            "mainClass": "DatenTester",
+            "projectName": "D2_OOP_8b6b9781"
+        },
+        {
+            "type": "java",
             "name": "Launch Main",
             "request": "launch",
             "mainClass": "at.ddb.objtest.Main",
